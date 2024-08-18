@@ -1,0 +1,81 @@
+.work-card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-card:hover {
+    transform: scale(1.05);
+    /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Increase shadow size */
+}
+
+.work-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.view-btn {
+    background-color: #007bff;
+    text-decoration: none;
+}
+
+.download-btn {
+    background-color: #28a745;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .work-card {
+        width: 200px;
+        /* Reduced width for tablets */
+    }
+
+    .work-card h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .work-card {
+        width: 150px;
+        /* Further reduced width for mobile */
+        padding: 0.5rem;
+        /* Reduced padding for mobile */
+    }
+
+    .work-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .card-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+        /* Add gap between buttons */
+    }
+
+    .download-btn,
+    .view-btn {
+        font-size: 0.7rem;
+        margin: 0 auto;
+        width: 50%;
+    }
+}

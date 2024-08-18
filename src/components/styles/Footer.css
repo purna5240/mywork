@@ -1,0 +1,42 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 0.9rem;
+        /* Reduced font size for tablets */
+    }
+
+    .footer a {
+        font-size: 0.9rem;
+        /* Reduced font size for links on tablets */
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .footer p {
+        font-size: 0.8rem;
+        /* Further reduced font size for mobile */
+    }
+
+    .footer a {
+        font-size: 0.8rem;
+        /* Further reduced font size for links on mobile */
+    }
+}

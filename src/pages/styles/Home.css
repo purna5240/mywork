@@ -1,0 +1,57 @@
+.home {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.work-section {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.work-section h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .intro {
+        padding: 1rem;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+}

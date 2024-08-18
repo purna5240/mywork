@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+.adminbtn {
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .header {
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header h1 {
+        font-size: 0.8rem;
+    }
+
+    .adminbtn {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        gap: 2px;
+    }
+}
